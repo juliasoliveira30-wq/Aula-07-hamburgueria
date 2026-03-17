@@ -84,7 +84,7 @@ app.use(logger);
 // Rota raiz — útil para verificar se o servidor está no ar.
 // Acesse: http://localhost:3000
 app.get('/', (req, res) => {
-    res.json({ mensagem: '🍣 Bem-vindo à API do Haruy Sushi! (Aula 6)' });
+    res.json({ mensagem: '🍣 Bem-vindo à API do Hamburgueria!' });
 });
 
 
@@ -111,7 +111,7 @@ app.use('/api/produtos', rotasProdutos);
 app.use((req, res, next) => {
     res.status(404).json({
         sucesso: false,
-        mensagem: `Rota '${req.url}' não encontrada na API do Haruy Sushi.`
+        mensagem: `Rota '${req.url}' não encontrada na API da Hamburgueria. Verifique a URL e tente novamente.`
     });
 });
 
