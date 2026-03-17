@@ -84,7 +84,7 @@ app.use(logger);
 // Rota raiz — útil para verificar se o servidor está no ar.
 // Acesse: http://localhost:3000
 app.get('/', (req, res) => {
-    res.json({ mensagem: '🍣 Bem-vindo à API do Hamburgueria!' });
+    res.json({ mensagem: ' 🍔 Bem-vindo à API da Hamburgueria!' });
 });
 
 
